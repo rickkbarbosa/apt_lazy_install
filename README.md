@@ -67,7 +67,7 @@ INSTRUCTIONS
 ============
 
 This script must run as root.
-Important: If your VGA card IS NOT an Nvidia-based, comment the line containing "apt-get install -y nvidia-current nvidia-settings"
+Important: If your VGA card IS NOT an Nvidia-based, comment the line containing "*apt-get install -y nvidia-current nvidia-settings*"
 
     git clone https://github.com/rickkbarbosa/apt_lazy_install.git
     chmod +x apt_lazy_install/apt_lazy_install.sh
