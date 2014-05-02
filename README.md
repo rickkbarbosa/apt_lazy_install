@@ -69,6 +69,6 @@ INSTRUCTIONS
 
 This script must run as root
 
-  git clone https://github.com/rickkbarbosa/apt_lazy_install.git
-  chmod +x apt_lazy_install/apt_lazy_install.sh
-  ./apt_lazy_install/apt_lazy_install.sh
+    git clone https://github.com/rickkbarbosa/apt_lazy_install.git
+    chmod +x apt_lazy_install/apt_lazy_install.sh
+    ./apt_lazy_install/apt_lazy_install.sh
