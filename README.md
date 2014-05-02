@@ -5,8 +5,7 @@ Ubuntu and Linux Mint Fast Installation.
 
 Add APT repositories and some apps on Ubuntu / Linux Mint installation.
 
-Supports Ubuntu 12.04 and above
-Linux Mint "Maya" and above
+Supports Ubuntu and Linux Mint, Starting 12.04 LTS "Raring" or "Maya"
 
 
 PACKAGES INCLUDED
@@ -19,7 +18,7 @@ PACKAGES INCLUDED
 * Man2Html - Browseable manpages
 * Nagstamon - Nagios client
 * Terminator - Multiple terminals
-* 
+ 
 ###### Emulation And Virtualization
 * Play on Linux
 * VirtualBox
