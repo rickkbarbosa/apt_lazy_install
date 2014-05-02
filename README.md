@@ -39,7 +39,7 @@ Packages included
 * Google Chrome
 * Icedtea - Java plugin for Netbanking
 * Birdie - A Twitter client
-*Hotot - Another Twitter client
+* Hotot - Another Twitter client
 
 ###### MULTIMEDIA
 * Gstreamer codecs
