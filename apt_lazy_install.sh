@@ -86,7 +86,10 @@ fi
 apt-get install -y grive
 
 #### Internet Add
-apt-get install -y flashplugin-downloader curl pidgin pidgin-otr enigmail icedtea-7-plugin tor-browser hotot-qt birdie 
+apt-get install -y flashplugin-downloader curl pidgin pidgin-otr enigmail icedtea-7-plugin tor-browser 
+#Here is two Twitter's Client: Hotot and Birdie. Choose your preferred uncommenting.
+apt-get install -y hotot-qt
+#apt-get install -y birdie 
         #Google Chrome
         if [[ $(uname -m;) -eq "x86_64" ]]; then
                 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
