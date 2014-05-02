@@ -5,34 +5,33 @@ Ubuntu and Linux Mint Fast Installation.
 
 Add APT repositories and some apps on Ubuntu / Linux Mint installation.
 
-
 Supports Ubuntu 12.04 and above
 Linux Mint "Maya" and above
 
 
-Packages included
+PACKAGES INCLUDED
 =================
 
-###### DEVELOPMENT TOOLS
+###### Development Tools
 * ADB - Android development tools
 * Heimdall - Android ROM Flasher
 * git
 * Man2Html - Browseable manpages
 * Nagstamon - Nagios client
-* Terminator - Good bash terminal
-
-###### EMULATION AND VIRTUALIZATION
+* Terminator - Multiple terminals
+* 
+###### Emulation And Virtualization
 * Play on Linux
 * VirtualBox
 * Wine
 * Windows fonts
 
-###### ENVIRONMENT
+###### Environment
 * Gnome
 * Unity
 * Xfce
 
-###### INTERNET
+###### Internet
 * Dropbox
 * OwnCloud
 * Flash plugins
@@ -41,25 +40,35 @@ Packages included
 * Birdie - A Twitter client
 * Hotot - Another Twitter client
 
-###### MULTIMEDIA
+###### Multimedia
 * Gstreamer codecs
 * Rhythmbox plugins
 * VLC Player
 
-###### PRODUCTIVITY
+###### Productivity
 * Alarm Clock
 * Diodon - Clipboard manager
 * Grive - Google Drive sync
 * NEMO - File manager
 
-###### TEXT EDITORS
+###### Text Editors
 * Sublime Text
 * vim
 
-###### VIDEO DRIVER
+###### Video Driver
 * nvidia
 
-###### OTHER TOOLS
+###### Other Tools
 * Conky
 * ZSH
 * Ubuntu-Tweak
+
+
+INSTRUCTIONS
+============
+
+This script must run as root
+
+> git clone https://github.com/rickkbarbosa/apt_lazy_install.git
+> chmod +x apt_lazy_install/apt_lazy_install.sh
+> ./apt_lazy_install/apt_lazy_install.sh
