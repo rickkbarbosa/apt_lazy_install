@@ -71,7 +71,18 @@ apt-get update --allow-unauthenticated
 #Installing Packages
 ### First of All :)
 apt-get install -y ssh aptitude vim zsh
-apt-get install -y nvidia-current nvidia-settings
+
+#VGA Cards
+        #If your vga card is a NVidia, use this command...
+        apt-get install -y nvidia-current nvidia-settings
+        #However, If your vga is an Intel Graphics, use this
+        #if [[ $(uname -m;) -eq "x86_64" ]]; then
+        #        curl -O https://download.01.org/gfx/ubuntu/13.10/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.4-0intel1_i386.deb
+        #        dpkg -i intel-linux-graphics-installer_1.0.4-0intel1_i386.deb
+        #else
+        #        curl -O https://download.01.org/gfx/ubuntu/13.10/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.4-0intel1_amd64.deb
+        #        dpkg -i intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.4-0intel1_amd64.deb
+        #fi
 
 #### Devtools
 apt-get install -y sublime-text-installer
