@@ -47,6 +47,7 @@ PACKAGES INCLUDED
 ###### Productivity
 * Alarm Clock
 * Diodon - Clipboard manager
+* Kingsoft Office - A Chinese Office Suite
 * Grive - Google Drive sync
 * NEMO - File manager
 

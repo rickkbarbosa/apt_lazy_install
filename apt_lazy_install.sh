@@ -117,6 +117,10 @@ apt-get install -y heimdall-flash heimdall-flash-frontend phablet-tools android-
 ###Other Aplications
 apt-get install -y nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share
 apt-get install -y unrar unrar-free diodon alarm-clock alarm-clock-applet nautilus-dropbox owncloud-client conky-all
+#Kingsoft Office
+wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
+dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
+apt-get install -f
 
 ### Installing Ubuntu Tweak
 #wget https://launchpad.net/ubuntu-tweak/0.8.x/0.8.5/+download/ubuntu-tweak_0.8.5-1_all.deb
