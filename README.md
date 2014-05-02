@@ -56,6 +56,7 @@ PACKAGES INCLUDED
 * vim
 
 ###### Video Driver
+* Intel
 * nvidia
 
 ###### Other Tools
