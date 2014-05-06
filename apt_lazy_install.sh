@@ -15,6 +15,7 @@ wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.lis
 #Setting VBox distro compatibility
         if [[ $DISTRO -eq "petra" ]]; then VBOX_DISTRO="saucy"; fi
         if [[ $DISTRO -eq "olivia" ]]; then VBOX_DISTRO="raring"; fi
+  		if [[ $DISTRO -eq "nadia" ]]; then VBOX_DISTRO="quantal"; fi
         if [[ $DISTRO -eq "maya" ]]; then VBOX_DISTRO="precise"; fi
 echo "deb http://download.virtualbox.org/virtualbox/debian ${VBOX_DISTRO} contrib" >> /etc/apt/sources.list.d/oracle_virtualbox.list
 
@@ -43,8 +44,9 @@ add-apt-repository ppa:fossfreedom/rhythmbox-plugins -y
 add-apt-repository ppa:webupd8team/tor-browser -y
 
 ## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
-echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
-
+if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" ]] then
+	echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
+fi
 
 if [[ $DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" ]] then
         #Nvidia Drivers - 12.10 (quantal) and latests
