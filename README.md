@@ -63,6 +63,7 @@ PACKAGES INCLUDED
 * Conky
 * ZSH
 * Ubuntu-Tweak
+* MultiSystem - A Multiboot manager into USB Stick
 
 
 INSTRUCTIONS
