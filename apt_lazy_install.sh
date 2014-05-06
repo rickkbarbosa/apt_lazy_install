@@ -42,6 +42,10 @@ add-apt-repository ppa:fossfreedom/rhythmbox-plugins -y
 #TOR Browser
 add-apt-repository ppa:webupd8team/tor-browser -y
 
+## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
+echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
+
+
 if [[ $DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" ]] then
         #Nvidia Drivers - 12.10 (quantal) and latests
         apt-add-repository ppa:xorg-edgers/ppa -y
@@ -128,6 +132,7 @@ apt-get install -y heimdall-flash heimdall-flash-frontend phablet-tools android-
 ###Other Aplications
 apt-get install -y nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share
 apt-get install -y unrar unrar-free diodon alarm-clock alarm-clock-applet nautilus-dropbox owncloud-client conky-all
+apt-get install -y multisystem 
 #Kingsoft Office
 wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
 dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
@@ -148,6 +153,7 @@ apt-get upgrade -y
 
 #Remove unused Unity lens
 apt-get -y autoremove unity-lens-music unity-lens-photos unity-lens-gwibber unity-lens-shopping unity-lens-video
+
 #Remove apport
 apt-get remove -y apport
 apt-get -y autoremove
