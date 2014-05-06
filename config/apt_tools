@@ -1,0 +1,27 @@
+#### Desktop Tools
+
+#Basic Tools
+apt-get install -y alarm-clock alarm-clock-applet
+
+#Cairo Dock
+if [[ $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "maya" ]]; then
+        apt-get install -y xubuntu-desktop ubuntu-desktop gnome-session gnome-tweak-tool
+        apt-get install -y cairo-dock cairo-dock-plugins
+fi
+
+#Diodon 
+apt-get install -y diodon
+
+#Filemanagers - Dropbox, Nemo, Owncloud and Grive
+apt-get install -y grive nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share nautilus-dropbox owncloud-client
+
+#Kingsoft Office
+wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
+dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
+apt-get install -f
+
+#Ubuntu-Tweak
+apt-get install -y ubuntu-tweak
+
+#UnRar
+apt-get install -y unrar unrar-free

@@ -15,6 +15,8 @@ PACKAGES INCLUDED
 * ADB - Android development tools
 * Heimdall - Android ROM Flasher
 * git
+* mercurial
+* subversion
 * Man2Html - Browseable manpages
 * Nagstamon - Nagios client
 * Terminator - Multiple terminals

@@ -1,0 +1,10 @@
+#Undesirable packages
+
+#Remove unused Unity lens
+apt-get -y autoremove unity-lens-music unity-lens-photos unity-lens-gwibber unity-lens-shopping unity-lens-video
+
+#Remove apport
+apt-get remove -y apport
+
+#autoremove other unused packages
+apt-get -y autoremove

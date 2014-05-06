@@ -1,0 +1,5 @@
+#### Devtools
+apt-get install -y git mercurial subversion
+apt-get install -y heimdall-flash heimdall-flash-frontend phablet-tools android-tools-adb android-tools-fastboot
+apt-get install -y wine ttf-mscorefonts-installer playonlinux dkms virtualbox-4.3
+apt-get install -y sublime-text-installer
