@@ -71,3 +71,7 @@ if [[ $DISTRO -eq "olivia" ]]; then VBOX_DISTRO="raring"; fi
 if [[ $DISTRO -eq "nadia" ]]; then VBOX_DISTRO="quantal"; fi
 if [[ $DISTRO -eq "maya" ]]; then VBOX_DISTRO="precise"; fi
 echo "deb http://download.virtualbox.org/virtualbox/debian ${VBOX_DISTRO} contrib" >> /etc/apt/sources.list.d/oracle_virtualbox.list
+
+#PHP 5.5 & Apache 2.4
+add-apt-repository ppa:ondrej/php5
+add-apt-repository ppa:ptn107/apache
