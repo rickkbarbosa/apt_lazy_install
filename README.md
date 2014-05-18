@@ -11,7 +11,7 @@ Supports Ubuntu and Linux Mint, Starting 12.04 LTS "Raring" or "Maya"
 PACKAGES INCLUDED
 =================
 
-###### Development Tools
+#### Development Tools
 * ADB - Android development tools
 * Heimdall - Android ROM Flasher
 * git
@@ -21,18 +21,18 @@ PACKAGES INCLUDED
 * Nagstamon - Nagios client
 * Terminator - Multiple terminals
  
-###### Emulation And Virtualization
+#### Emulation And Virtualization
 * Play on Linux
 * VirtualBox
 * Wine
 * Windows fonts
 
-###### Environment
+#### Environment
 * Gnome
 * Unity
 * Xfce
 
-###### Internet
+#### Internet
 * Dropbox
 * OwnCloud
 * Flash plugins
@@ -41,27 +41,46 @@ PACKAGES INCLUDED
 * Birdie - A Twitter client
 * Hotot - Another Twitter client
 
-###### Multimedia
+#### Multimedia
 * Gstreamer codecs
 * Rhythmbox plugins
 * VLC Player
 
-###### Productivity
+#### Productivity
 * Alarm Clock
 * Diodon - Clipboard manager
 * Kingsoft Office - A Chinese Office Suite
 * Grive - Google Drive sync
 * NEMO - File manager
 
-###### Text Editors
+#### Text Editors
 * Sublime Text
 * vim
 
-###### Video Driver
+#### Video Driver
 * Intel
 * nvidia
 
-###### Other Tools
+#### PHP development environment (LAMP Server)
+* Apache 2.4
+* MySQL 5.5
+* PHP 5.5.*
+
+###### PHP Essential Libs
+* php5-mysql
+* php-apc
+* php5-apcu
+* php5-curl
+* php5-gd
+* php5-json
+* php5-mcrypt
+* php5-memcached
+* php5-readline
+* dh-php5
+* pkg-php-tools
+* phpmyadmin
+
+#### Other Tools
 * Conky
 * ZSH
 * Ubuntu-Tweak
