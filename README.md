@@ -68,7 +68,6 @@ PACKAGES INCLUDED
 
 ###### PHP Essential Libs
 * php5-mysql
-* php-apc
 * php5-apcu
 * php5-curl
 * php5-gd
