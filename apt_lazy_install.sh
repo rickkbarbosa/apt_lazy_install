@@ -20,6 +20,7 @@ apt-get install -y ssh aptitude vim zsh
 . apt_multimedia_apps
 . apt_support_tools
 . apt_tools
+. apt_dev_php_mysql_environments
 
 #Upgrade all system
 echo "Upgrading system"
