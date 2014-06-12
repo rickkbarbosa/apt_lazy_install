@@ -65,6 +65,7 @@ PACKAGES INCLUDED
 * Apache 2.4
 * MySQL 5.5
 * PHP 5.5.*
+* PHP essential libs
 
 ###### PHP Essential Libs
 * php5-mysql
