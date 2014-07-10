@@ -66,6 +66,7 @@ add-apt-repository ppa:tualatrix/ppa -y
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 #Publishing new Repositories
 #Setting VBox distro compatibility between Mint and Ubuntu
+if [[ $DISTRO -eq "qiana" ]]; then VBOX_DISTRO="trusty"; fi
 if [[ $DISTRO -eq "petra" ]]; then VBOX_DISTRO="saucy"; fi
 if [[ $DISTRO -eq "olivia" ]]; then VBOX_DISTRO="raring"; fi
 if [[ $DISTRO -eq "nadia" ]]; then VBOX_DISTRO="quantal"; fi
@@ -73,5 +74,11 @@ if [[ $DISTRO -eq "maya" ]]; then VBOX_DISTRO="precise"; fi
 echo "deb http://download.virtualbox.org/virtualbox/debian ${VBOX_DISTRO} contrib" >> /etc/apt/sources.list.d/oracle_virtualbox.list
 
 #PHP 5.5 & Apache 2.4
-add-apt-repository ppa:ondrej/php5
-add-apt-repository ppa:ptn107/apache
+add-apt-repository ppa:ondrej/php5 -y
+add-apt-repository ppa:ptn107/apache -y
+
+#New multimedia repo
+if [[ $DISTRO -eq "quiana" || $DISTRO -eq "trusty" ]]; then
+	apt-add-repository -y ppa:mc3man/trusty-media;
+fi
+

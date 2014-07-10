@@ -16,7 +16,7 @@ apt-get install -y diodon
 apt-get install -y grive nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share nautilus-dropbox owncloud-client
 
 #Kingsoft Office
-wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
+#wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
 dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
 apt-get install -f
 

@@ -12,7 +12,7 @@ apt-get update --allow-unauthenticated
 
 #Install Apps
 echo "Installing your applications"
-apt-get install -y ss. config/aptitude vim zsh
+apt-get install -y aptitude vim zsh
 . config/apt_vga_cards
 . config/apt_desktop_environments
 . config/apt_dev_tools
@@ -20,7 +20,7 @@ apt-get install -y ss. config/aptitude vim zsh
 . config/apt_multimedia_apps
 . config/apt_support_tools
 . config/apt_tools
-. config/apt_dev_php_mysql_environments
+#. config/apt_dev_php_mysql_environments
 
 #Upgrade all system
 echo "Upgrading system"
