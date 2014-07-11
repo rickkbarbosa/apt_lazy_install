@@ -2,7 +2,7 @@
 
 #Birdie - Twitter Client
 #Birdie is a Twitter Client. Actually - my opinion - Hotot is coolest than Birdie, but as your choice.
-if [[ $DISTRO -eq "saucy" || $DISTRO -eq "petra" ]]; then
+if [[ $DISTRO -eq "saucy" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
     echo "deb http://ppa.launchpad.net/birdie-team/stable/ubuntu raring main" > /etc/apt/sources.list.d/birdie-team-stable-${DISTRO}.list
 else
     add-apt-repository ppa:birdie-team/stable -y
@@ -20,7 +20,7 @@ fi
 add-apt-repository ppa:nilarimogard/webupd8 -y
 
 ## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
-if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" ]]; then
+if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
     echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
 fi
 
