@@ -22,6 +22,7 @@ add-apt-repository ppa:nilarimogard/webupd8 -y
 ## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
 if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
     echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
+    wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-key add -
 fi
 
 #Nemo File Manager
