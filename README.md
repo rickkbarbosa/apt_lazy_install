@@ -31,6 +31,7 @@ PACKAGES INCLUDED
 * Gnome
 * Unity
 * Xfce
+* Cinnamon
 
 #### Internet
 * Dropbox

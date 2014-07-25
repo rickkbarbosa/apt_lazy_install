@@ -16,6 +16,9 @@ if [[ $DISTRO -ne "trusty" ]]; then
     add-apt-repository ppa:webupd8team/gnome3 -y
 fi
 
+#Cinnamon Desktop - A Environment desktop based on Gnome 3
+	add-apt-repository -y ppa:lestcape/cinnamon
+
 #Grive - A Google Drive directory sync
 add-apt-repository ppa:nilarimogard/webupd8 -y
 
