@@ -20,7 +20,7 @@ fi
 	add-apt-repository -y ppa:lestcape/cinnamon
 
 #Grive - A Google Drive directory sync
-add-apt-repository ppa:nilarimogard/webupd8 -y
+add-apt-repository -y ppa:thefanclub/grive-tools
 
 ## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
 if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
@@ -85,4 +85,7 @@ add-apt-repository ppa:ptn107/apache -y
 if [[ $DISTRO -eq "quiana" || $DISTRO -eq "trusty" ]]; then
 	apt-add-repository -y ppa:mc3man/trusty-media;
 fi
+
+#Netflix / Alternative Pipelight installer
+apt-add-repository -y ppa:ehoover/compholio
 

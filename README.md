@@ -46,6 +46,7 @@ PACKAGES INCLUDED
 * Gstreamer codecs
 * Rhythmbox plugins
 * VLC Player
+* Netflix
 
 #### Productivity
 * Alarm Clock
