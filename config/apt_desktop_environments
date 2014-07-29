@@ -1,10 +1,14 @@
 #Desktop Environments
 if [[ $DISTRO -eq "petra" || $DISTRO -eq "trusty" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
-    apt-get install -y gnome-shell gnome-shell-extensions gnome-session gnome-tweak-tool
-    apt-get install -y xubuntu-desktop
-    apt-get install -y cinnamon 
+	#Unity - for Linux Mint
+	if [[ $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
+		apt-get install -y ubuntu-desktop
+	fi
+	apt-get install -y gnome-shell gnome-shell-extensions gnome-session gnome-tweak-tool
+	apt-get install -y xubuntu-desktop
+	apt-get install -y cinnamon 
 else
-    apt-get install -y gnome-shell gnome-shell-extensions gnome-tweak-tool
-    apt-get install -y xubuntu-desktop 
-    apt-get install -y cinnamon
+	apt-get install -y gnome-shell gnome-shell-extensions gnome-tweak-tool
+	apt-get install -y xubuntu-desktop 
+	apt-get install -y cinnamon
 fi

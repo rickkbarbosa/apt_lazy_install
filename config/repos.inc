@@ -2,7 +2,7 @@
 
 #Birdie - Twitter Client
 #Birdie is a Twitter Client. Actually - my opinion - Hotot is coolest than Birdie, but as your choice.
-if [[ $DISTRO -eq "saucy" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
+if [[ $DISTRO -eq "saucy" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" || $DISTRO -eq "trusty"  ]]; then
     echo "deb http://ppa.launchpad.net/birdie-team/stable/ubuntu raring main" > /etc/apt/sources.list.d/birdie-team-stable-${DISTRO}.list
 else
     add-apt-repository ppa:birdie-team/stable -y
@@ -12,7 +12,7 @@ fi
     add-apt-repository ppa:diodon-team/stable -y
 
 #Gnome3 - Just when Distro isn't Ubuntu 14.04 and above
-if [[ $DISTRO -ne "trusty" ]]; then
+if [[ $DISTRO -ne "trusty" || $DISTRO -ne "qiana" ]]; then
     add-apt-repository ppa:webupd8team/gnome3 -y
 fi
 
@@ -23,7 +23,7 @@ fi
 add-apt-repository -y ppa:thefanclub/grive-tools
 
 ## Depôt MultiSystem - Figure out a USB Stick with VARIOUS OSes. Yeah, It's possible :D
-if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" ]]; then
+if [[ $DISTRO -eq "maya" || $DISTRO -eq "nadia" || $DISTRO -eq "olivia" || $DISTRO -eq "petra" || $DISTRO -eq "trusty" || $DISTRO -eq "qiana" ]]; then
     echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/depot_multisystem.list
     wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-key add -
 fi
@@ -32,7 +32,7 @@ fi
     add-apt-repository ppa:webupd8team/nemo -y
 
 #NVIDIA Video Drivers
-if [[ $DISTRO -eq "nadia" || $DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "quantal" ]]; then
+if [[ $DISTRO -eq "trusty" || $DISTRO -eq "nadia" || $DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "quantal" ]]; then
     #Nvidia Drivers - 12.10 (quantal) and latests
     apt-add-repository ppa:xorg-edgers/ppa -y
 elif [[ $DISTRO -eq "precise" || $DISTRO -eq "maya" ]]; then
@@ -51,7 +51,7 @@ wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.lis
 #Rhythmbox extra plugins
 add-apt-repository ppa:fossfreedom/rhythmbox-plugins -y
     #Google Music Rhythmbox 
-    if [[ $DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" ]]; then
+    if [[ $$DISTRO -eq "trusty" || DISTRO -eq "saucy" || $DISTRO -eq "raring" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" ]]; then
             add-apt-repository ppa:nvbn-rm/ppa -y
     fi
 
@@ -82,10 +82,9 @@ add-apt-repository ppa:ondrej/php5 -y
 add-apt-repository ppa:ptn107/apache -y
 
 #New multimedia repo
-if [[ $DISTRO -eq "quiana" || $DISTRO -eq "trusty" ]]; then
+if [[ $DISTRO -eq "qiana" || $DISTRO -eq "trusty" ]]; then
 	apt-add-repository -y ppa:mc3man/trusty-media;
 fi
 
 #Netflix / Alternative Pipelight installer
 apt-add-repository -y ppa:ehoover/compholio
-
