@@ -3,6 +3,17 @@
 #Remove unused Unity lens
 apt-get -y autoremove unity-lens-music unity-lens-photos unity-lens-gwibber unity-lens-shopping unity-lens-video
 
+#Another unused packages (for me, at least)
+	#Games
+	apt-get -y remove aisleriot gnome-mahjongg gnomine gnome-mines  gnome-sudoku 
+	#Multimedia
+	apt-get -y gmusicbrowser
+	
+	#Office Packages
+	apt-get -y autoremove abiword gnumeric
+
+
+
 #Remove apport
 apt-get remove -y apport
 
