@@ -1,7 +1,7 @@
 #Desktop Environments
-if [[ $DISTRO -eq "petra" || $DISTRO -eq "trusty" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
+if [[ $DISTRO -eq "qiana" || $DISTRO -eq "petra" || $DISTRO -eq "trusty" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
 	#Unity - for Linux Mint
-	if [[ $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
+	if [[ $DISTRO -eq "qiana" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
 		apt-get install -y ubuntu-desktop
 	fi
 	apt-get install -y gnome-shell gnome-shell-extensions gnome-session gnome-tweak-tool

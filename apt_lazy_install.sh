@@ -20,7 +20,7 @@ apt-get install -y aptitude vim zsh
 . config/apt_multimedia_apps
 . config/apt_support_tools
 . config/apt_tools
-#. config/apt_dev_php_mysql_environments
+. config/apt_dev_php_mysql_environments
 
 #Upgrade all system
 echo "Upgrading system"
