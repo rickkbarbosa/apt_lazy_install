@@ -3,6 +3,9 @@
 apt-get install -y conky-all multisystem nagstamon
 apt-get install -y ipcalc nmap terminator man2html 
 
+#Installing Gogo6 IPv6 Support
+#pt-get install -y gogoc
+
 #Installing TeamViewer
 wget http://download.teamviewer.com/download/teamviewer_linux.deb
 dpkg -i teamviewer_linux.deb
