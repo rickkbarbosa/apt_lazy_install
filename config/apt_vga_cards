@@ -1,12 +1,28 @@
-#VGA Cards
-        #If your vga card is a NVidia, use this command...
-#        apt-get install -y nvidia-current nvidia-settings
-        
-        #However, If your vga is an Intel Graphics, use these
-        #if [[ $(uname -m;) -eq "x86_64" ]]; then
-        #        curl -O https://download.01.org/gfx/ubuntu/14.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_i386.deb
-        #        dpkg -i intel-linux-graphics-installer_1.0.6-0intel1_i386.deb
-        #else
-        #        curl -O https://download.01.org/gfx/ubuntu/14.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_amd64.deb
-        #        dpkg -i intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_amd64.deb
-        #fi
+update-pciids
+VGA_CARD=$(lspci | grep -E "VGA|3D"  | awk '{print $5}';)
+
+if [[ VGA_CARD -eq "NVIDIA" ]]; then
+	apt-get install -y nvidia-current nvidia-settings
+	#VDPAU acceleration for flash video
+	apt-get install -y libvdpau1 vdpau-va-driver
+	sudo mkdir /etc/adobe
+	echo -e "EnableLinuxHWVideoDecode = 1\nOverrideGPUValidation = 1" | sudo tee /etc/adobe/mms.cfg
+elfif [[ VGA_CARD -eq "INTEL" ]]; then
+        if [[ $(uname -m;) -eq "x86_64" ]]; then
+                curl -O https://download.01.org/gfx/ubuntu/14.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_i386.deb
+                dpkg -i intel-linux-graphics-installer_1.0.6-0intel1_i386.deb
+        else
+                curl -O https://download.01.org/gfx/ubuntu/14.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_amd64.deb
+                dpkg -i intel-linux-graphics-installer/intel-linux-graphics-installer_1.0.6-0intel1_amd64.deb
+        fi
+	#VDPAU Acceleration for Flash
+	apt-get install -y i965-va-driver
+	apt-get install -y libvdpau-va-gl1
+	sudo sh -c "echo 'export VDPAU_DRIVER=va_gl' >> /etc/profile"
+	sudo mkdir /etc/adobe
+	sudo echo -e "EnableLinuxHWVideoDecode = 1\nOverrideGPUValidation = 1" | sudo tee /etc/adobe/mms.cfg
+elfif [[ VGA_CARD -eq "AMD" ]]; then
+	apt-get install -y mesa-vdpau-drivers
+	mkdir /etc/adobe
+	echo -e "EnableLinuxHWVideoDecode = 1\nOverrideGPUValidation = 1" | sudo tee /etc/adobe/mms.cfg
+fi

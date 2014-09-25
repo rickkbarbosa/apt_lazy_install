@@ -88,3 +88,6 @@ fi
 
 #Netflix / Alternative Pipelight installer
 apt-add-repository -y ppa:ehoover/compholio
+
+#Intel Drivers
+add-apt-repository -y ppa:nilarimogard/webupd8
