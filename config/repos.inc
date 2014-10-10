@@ -87,7 +87,9 @@ if [[ $DISTRO -eq "qiana" || $DISTRO -eq "trusty" ]]; then
 fi
 
 #Netflix / Alternative Pipelight installer
-apt-add-repository -y ppa:ehoover/compholio
+if [[ $DISTRO -ne "qiana "|| $DISTRO -ne "trusty" ]]; then
+    apt-add-repository -y ppa:ehoover/compholio
+fi
 
 #Intel Drivers
 add-apt-repository -y ppa:nilarimogard/webupd8

@@ -11,7 +11,7 @@ apt-get install -y diodon
 
 #Filemanagers - Dropbox, Nemo, Owncloud and Grive
 apt-get install -y grive grive-tools nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share 
-apt-get isntall -y nautilus-dropbox owncloud-client
+apt-get install -y nautilus-dropbox owncloud-client
 
 #Kingsoft Office
 wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb

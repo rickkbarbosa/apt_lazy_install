@@ -10,8 +10,13 @@ apt-get install -y rhythmbox-gmusic python-dateutil python-requests python-valid
 
 #FFMPEG Codecs
 apt-get install -y gstreamer0.10-plugins
-if [[ $DISTRO -eq "qiana "|| $DISTRO -eq "trusty ]]; then
+if [[ $DISTRO -eq "qiana " || $DISTRO -eq "trusty" ]]; then
 	apt-get install -y gstreamer0.10-ffmpeg;
 fi
 
-apt-get install -y netflix-desktop
+
+if [[ $DISTRO -ne "qiana " || $DISTRO -ne "trusty" ]]; then
+	apt-get install -y netflix-desktop
+fi
+
+
