@@ -34,3 +34,4 @@ apt-get install -y php5-memcached
 apt-get install -y php5-readline
 apt-get install -y dh-php5
 apt-get install -y pkg-php-tools
+apt-get install -y php-soap
