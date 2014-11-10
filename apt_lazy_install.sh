@@ -12,7 +12,7 @@ apt-get update --allow-unauthenticated
 
 #Install Apps
 echo "Installing your applications"
-apt-get install -y aptitude vim zsh
+apt-get install -y aptitude ssh vim zsh
 . config/apt_vga_cards
 . config/apt_desktop_environments
 . config/apt_dev_tools
