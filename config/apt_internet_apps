@@ -1,26 +1,21 @@
 #### Internet Add
 
-apt-get install -y flashplugin-downloader curl pidgin pidgin-otr pidgin-libnotify enigmail icedtea-7-plugin tor-browser 
+	#Flash Player
+	yum install -y http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+	yum install -y pidgin pidgin-otr pidgin-libnotify thunderbird-enigmail icedtea-web tor
 
-#Here is two Twitter's Client: Hotot and Birdie. Choose your preferred uncommenting.
-apt-get install -y hotot-qt
-#apt-get install -y birdie 
+	#Here is two Twitter's Client: Hotot and Birdie. Choose your preferred uncommenting.
+	yum install -y hotot-qt
+	#yum install birdie 
 
-#Google Chrome
-if [[ $(uname -m;) -eq "x86_64" ]]; then
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i google-chrome*; sudo apt-get -y install -f
-        wget https://dl.google.com/linux/direct/google-talkplugin_current_i386.deb
-        dpkg -i google-talkplugin_current_i386.deb; apt-get -y install -f
-else
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-        sudo dpkg -i google-chrome*; sudo apt-get -f install
-        wget https://dl.google.com/linux/direct/google-talkplugin_current_amd64.deb
-        dpkg -i google-talkplugin_current_amd64.deb
-	apt-get -y install -f
-fi
+	#Google Chrome
+	if [[ $(uname -m;) -eq "x86_64" ]]; then
+	        yum install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm --nogpgcheck
+	        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_i386.rpm --nogpgcheck
+	else
+	        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+	        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_x86_64.rpm --nogpgcheck
+	fi
 
-#Skype
-wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
-dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
-apt-get install -f
+	#Skype
+	yum install -y http://download.skype.com/linux/skype-4.3.0.37-fedora.i586.rpm

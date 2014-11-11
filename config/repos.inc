@@ -13,16 +13,12 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
 	wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -o /etc/yum.repos.d/virtualbox.repo
 
 
+#apt_internet_apps
+    #Birdie
+    #Birdie is a Twitter Client. Actually - my opinion - Hotot is coolest than Birdie, but as your choice.
+    wget http://download.opensuse.org/repositories/home:ivonunes/Fedora_20/home:ivonunes.repo
 
 #Apt_keys
-
-#Birdie - Twitter Client
-#Birdie is a Twitter Client. Actually - my opinion - Hotot is coolest than Birdie, but as your choice.
-if [[ $DISTRO -eq "saucy" || $DISTRO -eq "petra" || $DISTRO -eq "qiana" || $DISTRO -eq "trusty"  ]]; then
-    echo "deb http://ppa.launchpad.net/birdie-team/stable/ubuntu raring main" > /etc/apt/sources.list.d/birdie-team-stable-${DISTRO}.list
-else
-    add-apt-repository ppa:birdie-team/stable -y
-fi      
 
 #Diodon Clipboard Manager
     add-apt-repository ppa:diodon-team/stable -y
