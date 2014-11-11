@@ -1,37 +1,42 @@
-# @TODO make verifications about release version (https://launchpad.net/~ondrej/+archive/php5)
+# @TODO make verifications about release version (https://launchpad.net/~ondrej/+archive/php)
 
 # Apache 2.4
-apt-get install -y apache2-mpm-worker
-apt-get install -y libapache2-mod-php
+yum install httpd
+sudo service httpd start
+
+yum install -y apache2-mpm-worker
+yum install -y libapache2-mod-php
 
 # MySQL 5.5
-apt-get install -y mysql-server-5.5
-apt-get install -y mysql-server-core-5.5
-apt-get install -y mysql-client-5.5
-apt-get install -y mysql-client-core-5.5
-apt-get install -y libdbd-mysql-perl
-apt-get install -y libmysqlclient-dev
+yum install -y mysql mysql-server
+yum install -y mysql-devel
+service mysqld start
+#Putting a password to rot
+/usr/bin/mysql_secure_installation
 
 # PHP 5.5.*
-apt-get install -y php5
-apt-get install -y php-pear
-apt-get install -y php5-cli
-apt-get install -y php5-common
-apt-get install -y php5-dev
-apt-get install -y php-apc
+yum install php php-mysql
+
+yum install -y php-pear
+yum install -y php-cli
+yum install -y php-common
+yum install -y php-devel
+yum install -y php-apc
 
 # MySQL PHP driver + phpmyadmin
-apt-get install -y php5-mysql
-apt-get install -y phpmyadmin
+
+yum install -y phpmyadmin
+service httpd restart
 
 # PHP Essential Libs
-apt-get install -y php5-apcu
-apt-get install -y php5-curl
-apt-get install -y php5-gd
-apt-get install -y php5-json
-apt-get install -y php5-mcrypt
-apt-get install -y php5-memcached
-apt-get install -y php5-readline
-apt-get install -y dh-php5
-apt-get install -y pkg-php-tools
-apt-get install -y php-soap
+yum install -y php-apcu
+
+yum install -y php-curl
+yum install -y php-gd
+yum install -y php-json
+yum install -y php-mcrypt
+yum install -y php-memcached
+yum install -y php-readline
+#yum install -y dh-php
+#yum install -y pkg-php-tools
+yum install -y php-soap
