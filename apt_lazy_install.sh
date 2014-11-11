@@ -8,11 +8,11 @@ DISTRO=$(lsb_release -c | awk '{print $2}';)
 
 #Begin
 echo "Updatin. config/apt-Cache"
-#apt-get update --allow-unauthenticated
+apt-get update --allow-unauthenticated
 
 #Install Apps
 echo "Installing your applications"
-yum install -y openssh vim zsh
+apt-get install -y aptitude ssh vim zsh
 . config/apt_vga_cards
 . config/apt_desktop_environments
 . config/apt_dev_tools
