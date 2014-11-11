@@ -1,25 +1,28 @@
 #### Desktop Tools
 
 #Basic Tools
-apt-get install -y alarm-clock alarm-clock-applet
+#apt-get install -y alarm-clock alarm-clock-applet
 
 #Cairo Dock
-apt-get install -y cairo-dock cairo-dock-plugins
+yum install -y cairo-dock
 
 #Diodon 
-apt-get install -y diodon
+#yum install -y diodon
 
 #Filemanagers - Dropbox, Nemo, Owncloud and Grive
-apt-get install -y grive grive-tools nemo nemo-fileroller nemo-compare nemo-dropbox nemo-media-columns nemo-seahorse nemo-share 
-apt-get install -y nautilus-dropbox owncloud-client
+yum install -y json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcurl libcurl-devel
+wget install https://www.thefanclub.co.za/sites/default/files/public/downloads/grive-tools-1.10.noarch_0.rpm
+wget https://www.thefanclub.co.za/sites/default/files/public/downloads/grive-tools-1.10.noarch_0.rpm
+yum install grive-tools-1.10.noarch_0.rpm 
 
-#Kingsoft Office
-wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
-dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
-apt-get install -f
+nemo nemo-extensions #nemo-seahorse
 
-#Ubuntu-Tweak
-apt-get install -y ubuntu-tweak
+	#Dropbox
 
-#UnRar
-apt-get install -y unrar unrar-free
+	yum install -y nautilus-dropbox #owncloud-client
+
+	#Kingsoft Office
+	yum install -y http://kdl.cc.ksosoft.com/wps-community/download/a16/wps-office-9.1.0.4909-1.a16p1.i686.rpm
+
+	#UnRar
+	yum install -y unrar unrar-free

@@ -2,6 +2,7 @@
 
 #Basic config#
 DISTRO=$(lsb_release -c | awk '{print $2}';)
+SCRIPT_LOCATION=$(pwd;)
 
 #Bring other ConfigFiles
 . config/repos.inc

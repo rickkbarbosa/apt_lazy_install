@@ -19,11 +19,15 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
     wget http://download.opensuse.org/repositories/home:ivonunes/Fedora_20/home:ivonunes.repo
 
 
-
 #Multimedia_apps
     
     #Codecs
     yum localinstall y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+
+
+#Tools
+    #Dropbox
+    cp ${SCRIPT_LOCATION}/config/yum_repos/dropbox.repo .
 
 #Apt_keys
 
