@@ -18,6 +18,13 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
     #Birdie is a Twitter Client. Actually - my opinion - Hotot is coolest than Birdie, but as your choice.
     wget http://download.opensuse.org/repositories/home:ivonunes/Fedora_20/home:ivonunes.repo
 
+
+
+#Multimedia_apps
+    
+    #Codecs
+    yum localinstall y --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+
 #Apt_keys
 
 #Diodon Clipboard Manager
