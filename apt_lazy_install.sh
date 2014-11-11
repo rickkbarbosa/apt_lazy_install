@@ -12,8 +12,9 @@ echo "Updatin. config/apt-Cache"
 
 #Install Apps
 echo "Installing your applications"
-yum install -y openssh vim zsh
-. config/apt_vga_cards
+yum install -y openssh vim zsh wget tmux 
+service sshd start
+# . config/apt_vga_cards
 . config/apt_desktop_environments
 . config/apt_dev_tools
 . config/apt_internet_apps

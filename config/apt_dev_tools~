@@ -2,22 +2,16 @@
 
 	yum install -y git mercurial subversion
 
-	#Devel Packages
-	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-
 	#ADB Tools - Heimdall and others
 	yum groupinstall -y "Development Tools"; yum install -y libusb1-devel qt-devel libtool
 
 	#Wine and applications
 	yum install -y playonlinux mscore-fonts gpg
 
-	#VirtualBox
-	yum install -y VirtualBox-4.3
-
-	#Devel Packages
+	yum install dkms virtualbox-4.3
 	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-	
-	
+	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-PAE-devel dkms
+	yum install -y VirtualBox-4.3
 
 	#Sublime
 	curl -L http://git.io/3Wr2CQ | sh
