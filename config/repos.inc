@@ -1,19 +1,3 @@
-cd /etc/yum.repos.d/
-
-
-#apt_desktop_environments
-wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ayatana.repo
-
-
-#apt_dev_tools
-	#PlayOnLinux	
-	curl http://rpm.playonlinux.com/playonlinux.repo -o /etc/yum.repos.d/playonlinux.repo
-
-	#VirtualBox
-	wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -o /etc/yum.repos.d/virtualbox.repo
-
-
-
 #Apt_keys
 
 #Birdie - Twitter Client

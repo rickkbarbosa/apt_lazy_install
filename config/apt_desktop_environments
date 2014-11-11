@@ -1,7 +1,16 @@
 #Desktop Environments
-	yum install -y unity gconf-editor gnome-tweak-tool
-
-	yum groups install -y "Xfce Desktop"
-
-	yum group install -y cinnamon
-
+if [[ $DISTRO -eq "qiana" || $DISTRO -eq "petra" || $DISTRO -eq "trusty" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
+	#Unity - for Linux Mint
+	if [[ $DISTRO -eq "qiana" || $DISTRO -eq "petra" || $DISTRO -eq "olivia" || $DISTRO -eq "nadia" || $DISTRO -eq "maya" ]]; then
+		apt-get install -y ubuntu-desktop
+		apt-get install -y unity unity-scope-askubuntu unity-lens-applications unity-webapps-bbcnews unity-greeter ubuntu-desktop
+		apt-get install -y --install-recommends indicator-applet-complete
+	fi
+	apt-get install -y ubuntu-gnome-desktop gnome-shell gnome-shell-extensions gnome-session gnome-tweak-tool gdm
+	apt-get install -y xubuntu-desktop
+	apt-get install -y cinnamon 
+else
+	apt-get install -y ubuntu-gnome-desktop gnome-shell gnome-shell-extensions gnome-tweak-tool gdm
+	apt-get install -y xubuntu-desktop 
+	apt-get install -y cinnamon
+fi

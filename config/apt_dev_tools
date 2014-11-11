@@ -1,23 +1,5 @@
 #### Devtools
-
-	yum install -y git mercurial subversion
-
-	#Devel Packages
-	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-
-	#ADB Tools - Heimdall and others
-	yum groupinstall -y "Development Tools"; yum install -y libusb1-devel qt-devel libtool
-
-	#Wine and applications
-	yum install -y playonlinux mscore-fonts gpg
-
-	#VirtualBox
-	yum install -y VirtualBox-4.3
-
-	#Devel Packages
-	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-	
-	
-
-	#Sublime
-	curl -L http://git.io/3Wr2CQ | sh
+apt-get install -y git mercurial subversion
+apt-get install -y heimdall-flash heimdall-flash-frontend phablet-tools android-tools-adb android-tools-fastboot
+apt-get install -y wine ttf-mscorefonts-installer playonlinux dkms virtualbox-4.3
+apt-get install -y sublime-text-installer
