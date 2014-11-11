@@ -17,7 +17,9 @@ if [[ $DISTRO -ne "trusty" || $DISTRO -ne "qiana" ]]; then
 fi
 
 #Cinnamon Desktop - A Environment desktop based on Gnome 3
+if [[ $DISTRO -ne "qiana" ]]; then
 	add-apt-repository -y ppa:lestcape/cinnamon
+fi
 
 #Grive - A Google Drive directory sync
 add-apt-repository -y ppa:thefanclub/grive-tools
@@ -78,8 +80,8 @@ if [[ $DISTRO -eq "maya" ]]; then VBOX_DISTRO="precise"; fi
 echo "deb http://download.virtualbox.org/virtualbox/debian ${VBOX_DISTRO} contrib" >> /etc/apt/sources.list.d/oracle_virtualbox.list
 
 #PHP 5.5 & Apache 2.4
-add-apt-repository ppa:ondrej/php5 -y
-add-apt-repository ppa:ptn107/apache -y
+#add-apt-repository ppa:ondrej/php5 -y
+#add-apt-repository ppa:ptn107/apache -y
 
 #New multimedia repo
 if [[ $DISTRO -eq "qiana" || $DISTRO -eq "trusty" ]]; then

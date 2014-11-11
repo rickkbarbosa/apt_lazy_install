@@ -14,12 +14,18 @@ apt-get install -y grive grive-tools nemo nemo-fileroller nemo-compare nemo-drop
 apt-get install -y nautilus-dropbox owncloud-client
 
 #Kingsoft Office
-wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
-dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
-apt-get install -f
+#wget http://kdl.cc.ksosoft.com/wps-community/kingsoft-office_9.1.0.4280~a12p4_i386.deb
+#dpkg -i kingsoft-office_9.1.0.4280~a12p4_i386.deb
+#apt-get install -f
 
 #Ubuntu-Tweak
 apt-get install -y ubuntu-tweak
 
 #UnRar
 apt-get install -y unrar unrar-free
+
+#Firefox Development
+wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-35.0a2.en-US.linux-x86_64.tar.bz2
+tar xvfj firefox-35.0a2.en-US.linux-x86_64.tar.bz2
+sudo mv firefox /usr/local/bin/firefox-developer
+cp ${SCRIPT_LOCATION}/packages/firefox-developer.desktop /usr/share/applications/

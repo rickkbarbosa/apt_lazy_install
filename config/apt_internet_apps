@@ -23,4 +23,4 @@ fi
 #Skype
 wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
-apt-get install -f
+apt-get install -f -y

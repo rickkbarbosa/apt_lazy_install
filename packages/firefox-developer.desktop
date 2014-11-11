@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Firefox Developer Edition
+Comment=For Huge Mothefuckers only
+Exec=/usr/local/bin/firefox-developer/firefox
+Icon=/usr/local/bin/firefox-developer/browser/icons/mozicon128.png
+Categories=Internet;Development
+Terminal=false
