@@ -26,8 +26,4 @@ service sshd start
 
 #Upgrade all system
 echo "Upgrading system"
-apt-get upgrade -y
-
-#Remove boring things (At least form me They are :p )
-echo "Unable other packages"
-. config/apt_remove_unsused_packages
+yum update -y
