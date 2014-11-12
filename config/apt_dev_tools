@@ -21,3 +21,5 @@
 
 	#Sublime
 	curl -L http://git.io/3Wr2CQ | sh
+	cp ${SCRIPT_LOCATION}/packages/sublime-text.desktop /usr/share/applications/
+

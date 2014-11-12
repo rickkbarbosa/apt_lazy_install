@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Sublime Text
+Comment=The tex editor you will fall in love for
+Exec=/usr/bin/subl
+Icon=/usr/share/icons/hicolor/48x48/apps/sublime-text.png
+Categories=Development
+Terminal=false

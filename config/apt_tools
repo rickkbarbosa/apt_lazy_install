@@ -26,3 +26,10 @@ nemo nemo-extensions #nemo-seahorse
 
 	#UnRar
 	yum install -y unrar unrar-free
+
+
+#Firefox Development
+wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-35.0a2.en-US.linux-x86_64.tar.bz2
+tar xvfj firefox-35.0a2.en-US.linux-x86_64.tar.bz2
+sudo mv firefox /usr/local/bin/firefox-developer
+cp ${SCRIPT_LOCATION}/packages/firefox-developer.desktop /usr/share/applications/
