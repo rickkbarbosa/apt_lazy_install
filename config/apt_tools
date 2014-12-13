@@ -1,5 +1,8 @@
 #### Desktop Tools
 
+#CPU Utils
+yum -y install kernel-tools
+
 #Basic Tools
 #apt-get install -y alarm-clock alarm-clock-applet
 

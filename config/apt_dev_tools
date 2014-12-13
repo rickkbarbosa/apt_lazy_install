@@ -6,7 +6,7 @@
 	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
 
 	#ADB Tools - Heimdall and others
-	yum groupinstall -y "Development Tools"; yum install -y libusb1-devel qt-devel libtool
+	yum groupinstall -y "Development Tools"; yum install -y libusb1-devel qt-devel libtool gcc-c++
 
 	#Wine and applications
 	yum install -y playonlinux mscore-fonts gpg
@@ -18,8 +18,24 @@
 	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
 	
 	
-
 	#Sublime
 	curl -L http://git.io/3Wr2CQ | sh
 	cp ${SCRIPT_LOCATION}/packages/sublime-text.desktop /usr/share/applications/
+
+        #Heimdall
+       cd /tmp/
+       git clone git://github.com/Benjamin-Dobell/Heimdall.git
+       cd Heimdall/libpit
+       ./autogen.sh
+       ./configure
+       make
+       cd ../heimdall
+       ./autogen.sh
+       ./configure
+       make
+       sudo make install
+       cd ../heimdall-frontend/
+       qmake-qt4 heimdall-frontend.pro
+       sudo make install
+       cd ${SCRIPT_LOCATION}
 
