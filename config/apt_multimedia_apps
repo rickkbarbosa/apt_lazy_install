@@ -1,6 +1,7 @@
 #### Multimedia
 
-apt-get install -y phonon-backend-vlc vlc rhythmbox-plugin-complete ubuntu-restricted-extras libavcodec53
+apt-get install -y phonon-backend-vlc vlc rhythmbox-plugin-complete 
+apt-get install -y ubuntu-restricted-extras libavcodec53
 apt-get install -y gstreamer0.10-plugins-ugly gstreamer0.10-ffmpeg gstreamer0.10-plugins-bad frei0r-plugins gstreamer0.10-plugins-bad-multiverse
 sudo /usr/share/doc/libdvdread4/install-css.sh #Install dvd codecs
 apt-get install -y ubuntu-restricted-extras
