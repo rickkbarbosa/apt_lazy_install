@@ -4,6 +4,9 @@ apt-get install -y heimdall-flash heimdall-flash-frontend phablet-tools android-
 apt-get install -y wine ttf-mscorefonts-installer playonlinux dkms virtualbox-4.3
 apt-get install -y sublime-text-installer
 
+#Android Studio
+apt-get install android-studio
+
 #Git Extensions for nautilus / nemo
 #(If you prefer Thunar instead nautilus or nemo, uncomment 'thunar-vcs-plugin'
 apt-get install rabbitvcs-nautilus3 rabbitvcs-cli rabbitvcs-gedit #thunar-vcs-plugin rabbitvcs-thunar

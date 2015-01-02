@@ -99,4 +99,5 @@ add-apt-repository -y ppa:nilarimogard/webupd8
 #RabbitCVS - VCS management (SVN, GIT, Mercurial) via desktop
 sudo add-apt-repository ppa:rabbitvcs/ppa
 
-
+#Android Studio - Android Development Enviroment (http://paolorotolo.github.io/android-studio/)
+sudo apt-add-repository -y ppa:paolorotolo/android-studio 
