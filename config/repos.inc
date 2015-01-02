@@ -30,4 +30,7 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
     cp ${SCRIPT_LOCATION}/config/yum_repos/dropbox.repo .
 
 
+#Android Studio
+    cp ${SCRIPT_LOCATION}/config/yum_repos/android-studio.repo . 
+
 cd ${SCRIPT_LOCATION}

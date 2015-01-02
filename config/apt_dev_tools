@@ -8,6 +8,9 @@
 	#ADB Tools - Heimdall and others
 	yum groupinstall -y "Development Tools"; yum install -y libusb1-devel qt-devel libtool gcc-c++
 
+        #Android Studion - Developent packages for Android Applications
+        yum install -y android-studio
+
 	#Wine and applications
 	yum install -y playonlinux mscore-fonts gpg
 

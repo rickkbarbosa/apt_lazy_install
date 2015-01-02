@@ -1,0 +1,6 @@
+[phracek-android-studio]
+name=Copr repo for android-studio owned by phracek
+baseurl=http://copr-be.cloud.fedoraproject.org/results/phracek/android-studio/fedora-$releasever-$basearch/
+skip_if_unavailable=True
+gpgcheck=0
+enabled=1
