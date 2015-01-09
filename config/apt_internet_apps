@@ -17,5 +17,7 @@
 	        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_x86_64.rpm --nogpgcheck
 	fi
 
+        semanage permissive -a chrome_sandbox_t
+
 	#Skype
 	yum install -y http://download.skype.com/linux/skype-4.3.0.37-fedora.i586.rpm
