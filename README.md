@@ -1,11 +1,11 @@
 apt_lazy_install
 ================
 
-Ubuntu and Linux Mint Fast Installation.
+Ubuntu and Linux Mint Fast Installation. Add APT repositories and some apps on Ubuntu / Linux Mint installation to some useful apps.
 
-Add APT repositories and some apps on Ubuntu / Linux Mint installation.
+Supports Ubuntu and Linux Mint, Starting 14.04 LTS "Trusty"
 
-Supports Ubuntu and Linux Mint, Starting 12.04 LTS "Raring" or "Maya"
+UPDATE: Fedora 20 supported on branch "RedHat"
 
 
 PACKAGES INCLUDED
