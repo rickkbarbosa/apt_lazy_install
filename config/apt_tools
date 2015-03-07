@@ -12,13 +12,11 @@ yum install -y cairo-dock
 #Diodon 
 #yum install -y diodon
 
-#Filemanagers - Dropbox, Nemo, Owncloud and Grive
+#Filemanagers - Dropbox, Nemo, Owncloud and Insync (Unfortunately, I've had a lot of problems trying install grive on Fedora; Insync is the easiest way to sync Gdrive and an local folde)
 yum install -y json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcurl libcurl-devel
-wget install https://www.thefanclub.co.za/sites/default/files/public/downloads/grive-tools-1.10.noarch_0.rpm
-wget https://www.thefanclub.co.za/sites/default/files/public/downloads/grive-tools-1.10.noarch_0.rpm
-yum install grive-tools-1.10.noarch_0.rpm 
+yum install http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
 
-nemo nemo-extensions #nemo-seahorse
+yum install nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel gnome-mplayer-nemo nemo
 
 	#Dropbox
 
