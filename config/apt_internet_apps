@@ -16,7 +16,12 @@
 	#        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
 	#        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_x86_64.rpm --nogpgcheck
 	#fi
-	yum install google-chrome-stable
+	yum install -y google-chrome-stable
+
+	#If you prefer Chromium, uncomment the line below:
+	#wget https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/347052/chrome-linux.zip
+	#mkdir /opt/chromium
+	#unzip -d /opt/chromium chrome-linux.zip
 
         semanage permissive -a chrome_sandbox_t
 

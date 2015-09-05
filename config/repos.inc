@@ -10,7 +10,7 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
 	curl http://rpm.playonlinux.com/playonlinux.repo -o /etc/yum.repos.d/playonlinux.repo
 
 	#VirtualBox
-	wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -o /etc/yum.repos.d/virtualbox.repo
+	wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -O /etc/yum.repos.d/virtualbox.repo
 
 
 #apt_internet_apps

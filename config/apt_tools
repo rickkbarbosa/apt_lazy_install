@@ -14,9 +14,9 @@ yum install -y cairo-dock
 
 #Filemanagers - Dropbox, Nemo, Owncloud and Insync (Unfortunately, I've had a lot of problems trying install grive on Fedora; Insync is the easiest way to sync Gdrive and an local folde)
 yum install -y json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcurl libcurl-devel
-yum install http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
+yum install -y http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
 
-yum install nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel gnome-mplayer-nemo nemo
+yum install -y nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel gnome-mplayer-nemo nemo
 
 	#Dropbox
 
@@ -30,7 +30,12 @@ yum install nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel g
 
 
 #Firefox Development
-wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora/firefox-35.0a2.en-US.linux-x86_64.tar.bz2
-tar xvfj firefox-35.0a2.en-US.linux-x86_64.tar.bz2
+wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-aurora-l10n/firefox-42.0a2.pt-BR.linux-x86_64.tar.bz2
+tar xvfj firefox-42.0a2.pt-BR.linux-x86_64.tar.bz2
 sudo mv firefox /usr/local/bin/firefox-developer
 cp ${SCRIPT_LOCATION}/packages/firefox-developer.desktop /usr/share/applications/
+
+#Fedy - A Fedora Tweaker
+wget http://satya164.github.io/fedy/fedy-installer
+chmod +x fedy-installer
+sudo ./fedy-installer

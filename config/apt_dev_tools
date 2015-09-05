@@ -15,7 +15,7 @@
 	yum install -y playonlinux mscore-fonts gpg
 
 	#VirtualBox
-	yum install -y VirtualBox-4.3
+	yum install -y VirtualBox-5.0
 
 	#Devel Packages
 	yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
@@ -27,7 +27,7 @@
 
 
         #Rabbit CVS - CVS Manager (SVN, Git, Mercurial) on desktop
-        yum install rabbitvcs*
+        yum install -y rabbitvcs*
 
         #Heimdall
        cd /tmp/

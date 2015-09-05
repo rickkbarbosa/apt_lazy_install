@@ -1,7 +1,7 @@
 # @TODO make verifications about release version (https://launchpad.net/~ondrej/+archive/php)
 
 # Apache 2.4
-yum install httpd
+yum install -y httpd
 sudo service httpd start
 
 yum install -y apache2-mpm-worker
@@ -11,11 +11,11 @@ yum install -y libapache2-mod-php
 yum install -y mysql mysql-server
 yum install -y mysql-devel
 service mysqld start
-#Putting a password to rot
+#Putting a password to root
 /usr/bin/mysql_secure_installation
 
 # PHP 5.5.*
-yum install php php-mysql
+yum install -y php php-mysql
 
 yum install -y php-pear
 yum install -y php-cli
