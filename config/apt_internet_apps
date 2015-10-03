@@ -18,6 +18,9 @@
 	#fi
 	yum install -y google-chrome-stable
 
+	#If you prefer Chromium Browser, uncoment the line below
+	#yum install -y chromium
+
 	#If you prefer Chromium, uncomment the line below:
 	#wget https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/347052/chrome-linux.zip
 	#mkdir /opt/chromium
