@@ -1,9 +1,0 @@
-#Desktop Environments
-	yum install -y unity gconf-editor gnome-tweak-tool
-
-	yum groups install -y "Xfce Desktop"
-	yum install xfce4-\*-plugin
-	yum install xfce-theme-manager
-	
-	yum group install -y cinnamon
-

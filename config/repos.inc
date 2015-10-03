@@ -9,9 +9,8 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
 	#PlayOnLinux	
 	curl http://rpm.playonlinux.com/playonlinux.repo -o /etc/yum.repos.d/playonlinux.repo
 
-	#VirtualBox
-	wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -O /etc/yum.repos.d/virtualbox.repo
-
+    #VirtualBox
+    cp ${SCRIPT_LOCATION}/config/yum_repos/virtualbox.repo . 
 
 #apt_internet_apps
     #Birdie
@@ -28,7 +27,8 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
     fi
 
     #Chromium
-    wget https://repos.fedorapeople.org/spot/chromium/fedora-chromium-stable.repo
+    #wget https://repos.fedorapeople.org/spot/chromium/fedora-chromium-stable.repo
+    cp ${SCRIPT_LOCATION}/config/yum_repos/google-chrome/chromium.repo .
 
 
 #Multimedia_apps

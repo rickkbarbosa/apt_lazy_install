@@ -9,13 +9,13 @@
 	#yum install birdie 
 
 	#Google Chrome
-	#if [[ $(uname -m;) -eq "x86_64" ]]; then
-	#        yum install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm --nogpgcheck
-	#        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_i386.rpm --nogpgcheck
-	#else
-	#        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-	#        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_x86_64.rpm --nogpgcheck
-	#fi
+	if [[ $(uname -m;) -eq "x86_64" ]]; then
+	        yum install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm --nogpgcheck
+	        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_i386.rpm --nogpgcheck
+	else
+	        wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+	        yum install -y http://dl.google.com/linux/direct/google-talkplugin_current_x86_64.rpm --nogpgcheck
+	fi
 	yum install -y google-chrome-stable
 
 	#If you prefer Chromium Browser, uncoment the line below

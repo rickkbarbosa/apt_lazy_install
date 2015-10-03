@@ -12,9 +12,14 @@ yum install -y cairo-dock
 #Diodon 
 #yum install -y diodon
 
-#Filemanagers - Dropbox, Nemo, Owncloud and Insync (Unfortunately, I've had a lot of problems trying install grive on Fedora; Insync is the easiest way to sync Gdrive and an local folde)
-yum install -y json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcurl libcurl-devel
-yum install -y http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
+#Filemanagers - Dropbox, Nemo, Owncloud and Google Drive
+yum install json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcurl libcurl-devel
+yum install libappindicator-gtk3 python-devel python-pip python-inotify
+pip install --upgrade google-api-python-client
+yum install https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.1.2.noarch.rpm
+
+#Isinc still here as a option to sync files with Google Drive - But I prefer Overgrive
+#yum install -y http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
 
 yum install -y nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel gnome-mplayer-nemo nemo
 
