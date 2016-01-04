@@ -45,4 +45,8 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
 #Android Studio
     cp ${SCRIPT_LOCATION}/config/yum_repos/android-studio.repo . 
 
+
+#Handbrake - Video Converter    
+   cp ${SCRIPT_LOCATION}/config/yum_repos/fedora-handbrake.repo .
+
 cd ${SCRIPT_LOCATION}

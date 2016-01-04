@@ -14,4 +14,4 @@
         #Rhythmbox plugins
         yum install -y rhythmbox-equalizer rhythmbox-lirc
 
-
+	yum install -y HandBrake-gui libdvdcss
