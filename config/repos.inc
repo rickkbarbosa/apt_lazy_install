@@ -49,4 +49,6 @@ wget http://download.opensuse.org/repositories/GNOME:/Ayatana/Fedora_17/GNOME:Ay
 #Handbrake - Video Converter    
    cp ${SCRIPT_LOCATION}/config/yum_repos/fedora-handbrake.repo .
 
+#Filebot
+   cp ${SCRIPT_LOCATION}/config/yum_repos/filebot.repo .
 cd ${SCRIPT_LOCATION}

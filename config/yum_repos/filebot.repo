@@ -1,0 +1,9 @@
+[abeloin-filebot]
+name=Copr repo for filebot owned by abeloin
+#baseurl=https://copr-be.cloud.fedoraproject.org/results/abeloin/filebot/fedora-$releasever-$basearch/
+baseurl=https://copr-be.cloud.fedoraproject.org/results/abeloin/filebot/fedora-21-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/abeloin/filebot/pubkey.gpg
+enabled=1
+enabled_metadata=1

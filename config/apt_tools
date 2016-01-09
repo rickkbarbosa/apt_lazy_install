@@ -44,3 +44,7 @@ cp ${SCRIPT_LOCATION}/packages/firefox-developer.desktop /usr/share/applications
 wget http://satya164.github.io/fedy/fedy-installer
 chmod +x fedy-installer
 sudo ./fedy-installer
+
+
+#Filebot - TV and Series organizer
+yum -y install filebot
