@@ -17,21 +17,21 @@ yum install json-c json-c-devel qt-devel boost-devel openssl-devel libxslt libcu
 yum install libappindicator-gtk3 python-devel python-pip python-inotify
 pip install --upgrade google-api-python-client
 yum install https://www.thefanclub.co.za/sites/default/files/public/overgrive/overgrive-3.1.2.noarch.rpm
-
 #Isinc still here as a option to sync files with Google Drive - But I prefer Overgrive
 #yum install -y http://s.insynchq.com/builds/insync-1.1.5.32051-fc17.x86_64.rpm
-
 yum install -y nemo-extensions nemo-rabbitvc nemo-preview nemo-dropbox nemo-devel gnome-mplayer-nemo nemo
 
-	#Dropbox
+#Dropbox
+yum install -y nautilus-dropbox #owncloud-client
 
-	yum install -y nautilus-dropbox #owncloud-client
+#Document Readers
+yum install -y mcomix
 
-	#Kingsoft Office
-	yum install -y http://kdl.cc.ksosoft.com/wps-community/download/a16/wps-office-9.1.0.4909-1.a16p1.i686.rpm
+#Kingsoft Office
+yum install -y http://kdl.cc.ksosoft.com/wps-community/download/a16/wps-office-9.1.0.4909-1.a16p1.i686.rpm
 
-	#UnRar
-	yum install -y unrar unrar-free
+#UnRar
+yum install -y unrar unrar-free
 
 
 #Firefox Development
