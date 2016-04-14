@@ -20,6 +20,10 @@ else
 	apt-get -y install -f
 fi
 
+#Other browsers codecs and Flashplayer
+apt-get install -y chromium-codecs-ffmpeg-extra
+apt-get install -y pepperflashplugin-nonfree
+
 #Skype
 wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
